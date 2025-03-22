@@ -3,12 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>页面标题</title>
-    <link rel="stylesheet" href="README.md">
+    <title>README.md</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/4.3.0/marked.min.js"></script>
 </head>
 <body>
 
-    <!-- 页面内容 -->
+    <h1>README.md 内容</h1>
+    <div id="readme-content">加载中...</div>
+
+    <script>
+        // GitHub 仓库信息
+        const owner = "xjz-01";
+        const repo = "xjz-01.github.io";
+        const branch = "main"; 
+
+        fetch(`https://raw.githubusercontent.com/${owner}/${repo}/${branch}/README.md`)
+            .then(response => response.text())
+            .then(markdown => {
+                document.getElementById("readme-content").innerHTML = marked.parse(markdown);
+            })
+            .catch(error => {
+                document.getElementById("readme-content").innerHTML = "无法加载 README.md";
+                console.error("加载失败:", error);
+            });
+    </script>
 
 </body>
 </html>
