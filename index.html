@@ -17,7 +17,20 @@
   <button onclick="bg()">背景green</button>
   <button onclick="br()">背景red</button>
   <button onclick="p5()">切换0.1s(可叠加)</button>
-
+  <button onclick="toggleFullScreen()">进入全屏</button>
+  <script>
+  function toggleFullScreen() {
+      if (document.documentElement.requestFullscreen) {
+          document.documentElement.requestFullscreen();
+      } else if (document.documentElement.mozRequestFullScreen) { // Firefox
+          document.documentElement.mozRequestFullScreen();
+      } else if (document.documentElement.webkitRequestFullscreen) { // Chrome, Safari and Opera
+          document.documentElement.webkitRequestFullscreen();
+      } else if (document.documentElement.msRequestFullscreen) { // IE/Edge
+          document.documentElement.msRequestFullscreen();
+      }
+  }
+  </script>
 </body>
 
 </html>
