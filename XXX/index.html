@@ -2,35 +2,33 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <script src="js/1.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button {
+            width: 7em;
+            height: 3em;
+            font-size: larger;
+            border: 2px solid black;
+        }
+
+        button:hover {
+            color: dodgerblue;
+            text-decoration: underline;
+        }
+
+        button {
+            text-decoration: none;
+            color: black;
+        }
+    </style>
 </head>
 
 <body>
-  <div style="display: flex;">
-    <img src="img/image.png" alt="" style="width: 40px;">
-    <div id="p1">当心快速变化的颜色引发不适！</div>
-  </div>
-  <button onclick="bb()">背景blue</button>
-  <button onclick="bg()">背景green</button>
-  <button onclick="br()">背景red</button>
-  <button onclick="p5()">切换0.1s(可叠加)</button>
-  <button onclick="toggleFullScreen()">进入全屏</button>
-  <script>
-  function toggleFullScreen() {
-      if (document.documentElement.requestFullscreen) {
-          document.documentElement.requestFullscreen();
-      } else if (document.documentElement.mozRequestFullScreen) { // Firefox
-          document.documentElement.mozRequestFullScreen();
-      } else if (document.documentElement.webkitRequestFullscreen) { // Chrome, Safari and Opera
-          document.documentElement.webkitRequestFullscreen();
-      } else if (document.documentElement.msRequestFullscreen) { // IE/Edge
-          document.documentElement.msRequestFullscreen();
-      }
-  }
-  </script>
+    <a href="1.html"><button>显示器测试</button></a>
 </body>
+<script>
+</script>
 
 </html>
