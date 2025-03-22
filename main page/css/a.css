@@ -1,4 +1,4 @@
-body button {
+body div button {
     width: 10em;
     height: 10em;
     font-size: larger;
@@ -10,12 +10,12 @@ body button {
     transition: background-color 2s;
 }
 
-a:hover {
-    color: lightcoral;
+button:hover {
+    color: dodgerblue;
     text-decoration: underline;
 }
 
-a {
+button {
     text-decoration: none;
     color: black;
 }
