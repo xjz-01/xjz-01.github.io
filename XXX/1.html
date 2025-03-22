@@ -9,28 +9,31 @@
 </head>
 
 <body>
-  <div style="display: flex;">
+  <div id="warning" style="display: flex;">
     <img src="img/image.png" alt="" style="width: 40px;">
     <div id="p1">当心快速变化的颜色引发不适！</div>
   </div>
-  <button onclick="bb()">背景blue</button>
-  <button onclick="bg()">背景green</button>
-  <button onclick="br()">背景red</button>
-  <button onclick="bg()">背景灰色</button>
-  <button onclick="p5()">rgb切换0.1s(可叠加)</button>
-  <button onclick="toggleFullScreen()">进入全屏</button>
+  <div id="buttons">
+    <button onclick="bb()">背景blue</button>
+    <button onclick="bg()">背景green</button>
+    <button onclick="br()">背景red</button>
+    <button onclick="bg()">背景灰色</button>
+    <button onclick="p5()">rgb切换0.1s(可叠加)</button>
+    <button onclick="toggleFullScreen()">进入全屏</button>
+    <button onclick="hidd()">隐藏页面按钮</button>
+  </div>
   <script>
-  function toggleFullScreen() {
+    function toggleFullScreen() {
       if (document.documentElement.requestFullscreen) {
-          document.documentElement.requestFullscreen();
+        document.documentElement.requestFullscreen();
       } else if (document.documentElement.mozRequestFullScreen) { // Firefox
-          document.documentElement.mozRequestFullScreen();
+        document.documentElement.mozRequestFullScreen();
       } else if (document.documentElement.webkitRequestFullscreen) { // Chrome, Safari and Opera
-          document.documentElement.webkitRequestFullscreen();
+        document.documentElement.webkitRequestFullscreen();
       } else if (document.documentElement.msRequestFullscreen) { // IE/Edge
-          document.documentElement.msRequestFullscreen();
+        document.documentElement.msRequestFullscreen();
       }
-  }
+    }
   </script>
 </body>
 

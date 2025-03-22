@@ -10,6 +10,10 @@ function br() {
 function bg() {
     document.body.style.backgroundColor = "rgb(128, 128, 128)";
 }
+function hidd() {
+    document.getElementById("warning").style.display = "none";
+    document.getElementById("buttons").style.display = "none";
+}
 let colorIndex = 0;
 function p5() {
     setInterval(function () {
