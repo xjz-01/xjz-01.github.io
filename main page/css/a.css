@@ -9,3 +9,13 @@ body button {
     cursor: pointer;
     transition: background-color 2s;
 }
+
+a:hover {
+    color: lightcoral;
+    text-decoration: underline;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
