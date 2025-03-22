@@ -1,31 +1,34 @@
 # xjz-01.github.io
------
-**👋你好!这是一个属于*xjz-01*的个人测试网站！**
----
 
-## 📌 信息
-- **开发者:**  **[*xjz-01*](https://github.com/xjz-01)** , **[*chenchen-2333*](https://github.com/chenchen-2333)** 
-- **仓库许可证:** [CC BY-NC](https://creativecommons.org/licenses/by-nc/4.0/)  
+**👋 你好！这是 *xjz-01* 的个人测试网站！**
 
 ---
 
-## 🌟 简介
-- **本仓库由两位开发者共同维护。**
-   - 当然，如果您想参与开发测试，也欢迎您提出[**Issues**](https://github.com/xjz-01/xjz-01.github.io/issues)，[**Pull Request**](https://github.com/xjz-01/xjz-01.github.io/pulls)或直接[**Fork**](https://github.com/xjz-01/xjz-01.github.io/fork)整个仓库。
-   - 我们欢迎任何遵守许可证的人们做这些事情。
-- **这个仓库属于[*xjz-01*](https://github.com/xjz-01)。**
-   - **[*chenchen-2333*](https://github.com/chenchen-2333)** 只是客串写一点东西（ta主要写点markdown，这篇README.md即出自其之手）
+## 📌 项目信息
+- **开发者:**  [**xjz-01**](https://github.com/xjz-01), [**chenchen-2333**](https://github.com/chenchen-2333)  
+- **仓库许可证:** [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/)  
 
-- **本仓库涉及以下语言**：
-  - **CSS**
-  - **HTML**
-  - **JavaScript**
-  - **Markdown**
+---
+
+## 🌟 项目简介
+- **本仓库由两位开发者共同维护。**  
+  - 你可以通过 [**Issues**](https://github.com/xjz-01/xjz-01.github.io/issues)、[**Pull Requests**](https://github.com/xjz-01/xjz-01.github.io/pulls) 或直接 [**Fork**](https://github.com/xjz-01/xjz-01.github.io/fork) 参与贡献。  
+  - 欢迎任何遵守许可证的开发者加入改进工作。  
+- **这个仓库归 [*xjz-01*](https://github.com/xjz-01) 所有。**  
+  - [**chenchen-2333**](https://github.com/chenchen-2333) 主要负责 Markdown 文档（包括这篇 README.md 😆）。  
+
+### 📌 技术栈
+本项目目前使用以下技术：
+- **HTML**
+- **CSS**
+- **JavaScript**
+- **Markdown**
   
-   - 根据能力水平提升，或许会增加更多语言（Maybe...?）
-  
+未来可能会扩展更多语言（Maybe...? 🤔）。
+
 ---
 
-## 💡 提醒
-> **本仓库不适用于正式生产环境，仅作兴趣爱好测试之用。**
-> —————其实，有没有一种可能，我们二位的水平也摸不到职业门槛。
+## 💡 重要说明
+> ⚠ **本仓库仅供个人测试和兴趣开发，不适用于正式生产环境。**  
+> 
+> —— 当然，也可能是因为我们的技术还不够格 😆。
