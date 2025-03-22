@@ -17,10 +17,10 @@
    - **[*chenchen-2333*](https://github.com/chenchen-2333)** 只是客串写一点东西（ta主要写点markdown，这篇README.md即出自其之手）
 
 - **本仓库涉及以下语言**：
-- **CSS**
-- **HTML**
-- **JavaScript**
-- **Markdown**
+  - **CSS**
+  - **HTML**
+  - **JavaScript**
+  - **Markdown**
   
    - 根据能力水平提升，或许会增加更多语言（Maybe...?）。
   
