@@ -7,6 +7,9 @@ function bg() {
 function br() {
     document.body.style.backgroundColor = "#ff0000";
 }
+function bg() {
+    document.body.style.backgroundColor = "rgb(128, 128, 128)";
+}
 let colorIndex = 0;
 function p5() {
     setInterval(function () {
