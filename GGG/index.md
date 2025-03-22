@@ -5,7 +5,7 @@
 ---
 
 ## 📌 信息
-- **开发者:** [chenchen-2333]（https://github.com/chenchen-2333）     
+- **开发者:** [chenchen-2333](https://github.com/chenchen-2333)    
 - **仓库许可证:** [CC BY-NC](https://creativecommons.org/licenses/by-nc/4.0/)  
 
 ---
