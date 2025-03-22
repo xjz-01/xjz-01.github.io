@@ -1,1 +1,28 @@
-readme.md
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Markdown 页面</title>
+</head>
+<body>
+    <div id="markdown-content"></div>
+
+    <!-- 引入 Marked.js -->
+    <script src="https://cdn.jsdelivr.net/npm/marked@4.0.12/lib/marked.min.js"></script>
+
+    <script>
+        // 使用 fetch 加载当前目录下的 index.md 文件
+        fetch('index.md')
+            .then(response => response.text())
+            .then(markdownText => {
+                // 使用 Marked.js 将 Markdown 转换为 HTML
+                const htmlContent = marked(markdownText);
+                
+                // 将转换后的 HTML 插入到页面中的指定容器
+                document.getElementById('markdown-content').innerHTML = htmlContent;
+            })
+            .catch(error => console.error('加载 Markdown 文件时出错:', error));
+    </script>
+</body>
+</html>
