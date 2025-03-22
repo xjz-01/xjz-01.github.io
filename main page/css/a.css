@@ -1,0 +1,11 @@
+body button {
+    width: 10em;
+    height: 10em;
+    font-size: larger;
+    background-color: lightcyan;
+    border: 3px solid lightseagreen;
+    border-radius: 10%;
+    margin: 1em;
+    cursor: pointer;
+    transition: background-color 2s;
+}
