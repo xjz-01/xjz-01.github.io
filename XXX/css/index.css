@@ -1,13 +1,31 @@
 body {
     font-family: dengxian;
     font-size: larger;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.75)), url(../img/bgi.jpg);
+    /* 黑色遮罩，上方0显示，下方0.75显示透明度，渐变效果 */
+    /* linear-gradient() CSS 函数创建一个由两种或多种颜色沿一条直线进行线性过渡的图像，
+    其结果是 <gradient> 数据类型的对象，此对象是一种特殊的 <image> 数据类型。 */
+    background-size: cover;
+    /* background-size 属性规定背景图片的尺寸。 */
+    /* 属性 cover缩放背景图片以完全覆盖背景区，可能背景图片部分看不见。
+    和 contain 值相反，cover 值尽可能大的缩放背景图像并保持图像的宽高比例（图像不会被压扁）。
+    该背景图以它的全部宽或者高覆盖所在容器。当容器和背景图大小不同时，背景图的 左/右 或者 上/下 部分会被裁剪。 */
+    background-attachment: fixed;
+    /* background-attachment 属性设置背景图像是否固定或者随着页面的其余部分滚动。 */
+    background-repeat: no-repeat;
+    background-position: center;
+    /* background-position 属性设置背景图像的起始位置。 */
+    color: white;
+    margin: 0;
+    padding: 0;
 }
 
 button {
     width: 7em;
     height: 3em;
     font-size: larger;
-    border: 2px solid black;
+    border: 2px solid skyblue;
+    background-color: #cef9ff;
 }
 
 button:hover {
@@ -27,5 +45,12 @@ button {
 
 #big_div {
     display: flex;
+    /* 定义了一个 flex 容器，其子元素将根据指定的 flex-direction 布局。 */
     gap: 10px;
+    /* 设置行与列之间的间隙 */
+    justify-content: center;
+    /* 定义了浏览器如何沿弹性容器的主轴以及网格和多列容器的内联轴在内容项之间和周围分配空间。 */
+    align-items: center;
+    /* 在 flexbox 中，它控制项目在交叉轴上的对齐方式。在网格布局中，它控制项目在其网格区域内的块轴上的对齐方式。 */
+    height: 100vh;
 }
