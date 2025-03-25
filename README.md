@@ -6,7 +6,7 @@
 
 ## 📌 项目信息
 - **开发者:**  [**xjz-01**](https://github.com/xjz-01), [**chenchen-2333**](https://github.com/chenchen-2333)  
-- **仓库许可证:** [CC BY-NC-SA](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh-hans)  
+- **仓库许可证:** [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh-hans)  
 
 ---
 
