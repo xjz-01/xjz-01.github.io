@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>计算器</title>
+    <style>
+        a{
+            text-decoration: none;
+            color: #000;
+        }
+    </style>
+    <script>
+        function clr(){
+            document.body.innerHTML = "";
+
+        }
+        function cal() {
+            var num1 = window.prompt("请输入第一个数字：", 0);
+            var op = window.prompt("请输入运算符号", "+");
+            var num2 = window.prompt("请输入第二个数字：", 0);
+            var n1 = parseFloat(num1);
+            var n2 = parseFloat(num2);
+            // 转换字符为数字
+            var res = "";
+            switch (op) {
+                case "+":
+                    res = n1 + n2
+                    break;
+                case "-":
+                    res = n1 - n2;
+                    break;
+                case "*":
+                    res = n1 * n2;
+                    break;
+                case "/":
+                    res = n1 / n2;
+                    break;
+            }
+            document.write(n1 + op + n2 + "=" + res+"<button onclick='clr(),cal()'>重新开始计算</button>");
+            // 按下按钮，清空页面内容，重新开始计算
+        }
+    </script>
+</head>
+
+<body>
+    <a href="../index.html">
+        <button>
+            返回上一级
+        </button>
+    </a>
+    <button onclick="cal()">
+        开始计算
+    </button>
+</body>
+
+</html>
