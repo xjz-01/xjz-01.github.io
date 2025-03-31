@@ -6,13 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>计算器</title>
     <style>
-        a{
+        a {
             text-decoration: none;
             color: #000;
         }
     </style>
     <script>
-        function clr(){
+        function clr() {
             document.body.innerHTML = "";
 
         }
@@ -24,6 +24,7 @@
             var n2 = parseFloat(num2);
             // 转换字符为数字
             var res = "";
+            var flag = 0;
             switch (op) {
                 case "+":
                     res = n1 + n2
@@ -35,11 +36,23 @@
                     res = n1 * n2;
                     break;
                 case "/":
-                    res = n1 / n2;
-                    break;
+                    if (n2 == 0) {
+                        flag = 1;
+                        res = "除数不能为0！";
+                        break;
+                    }
+                    else {
+                        res = n1 / n2;
+                        break;
+                    }
             }
-            document.write(n1 + op + n2 + "=" + res+"<button onclick='clr(),cal()'>重新开始计算</button>");
-            // 按下按钮，清空页面内容，重新开始计算
+            if (flag == 1) {
+                document.write(res + "<button onclick='clr(),cal()'>重新开始计算</button>");
+
+            } else {
+                document.write(n1 + op + n2 + "=" + res + "<button onclick='clr(),cal()'>重新开始计算</button>");
+                // 按下按钮，清空页面内容，重新开始计算
+            }
         }
     </script>
 </head>
